@@ -2759,6 +2759,10 @@ select {
   .large-block-grid-12 > li:nth-child(12n) {
     padding-left: 1.71875em;
     padding-right: 0em; } }
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5; }
+
 h1, h2, h3, h4, h5, h6 {
   color: black; }
 
@@ -2854,3 +2858,124 @@ section h2 {
   .nav.center ul {
     left: 50%;
     margin-left: -90px; } }
+.hero {
+  width: 100%; }
+  .hero:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.hero {
+  width: 100%;
+  padding: 200px 0;
+  border-bottom: 1px solid red; }
+  .hero:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .hero h1 {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    font-weight: 900;
+    width: 860px;
+    font-size: 2.25em;
+    line-height: 1.25em; }
+  .hero h2 {
+    font-size: 1.25em; }
+
+.why {
+  width: 100%;
+  padding: 100px 0;
+  border-bottom: 1px solid red; }
+  .why:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .why h1 {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    font-weight: 900;
+    width: 860px;
+    font-size: 2.25em;
+    line-height: 1.25em; }
+  .why h2 {
+    font-size: 1.25em; }
+
+.services {
+  width: 100%;
+  padding: 100px 0;
+  border-bottom: 1px solid red; }
+  .services:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .services h1 {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    font-weight: 900;
+    width: 860px;
+    font-size: 2.25em;
+    line-height: 1.25em; }
+  .services h2 {
+    font-size: 2.75em;
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 0; }
+  .services h3 {
+    text-align: center; }
+
+.direct-sales {
+  width: 100%;
+  padding: 100px 0;
+  border-bottom: 1px solid red; }
+  .direct-sales:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .direct-sales h1 {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    font-weight: 900;
+    width: 860px;
+    font-size: 2.25em;
+    line-height: 1.25em; }
+  .direct-sales h2 {
+    font-size: 2.75em;
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 0; }
+  .direct-sales h3 {
+    text-align: center; }
+
+.methods {
+  width: 100%;
+  padding: 100px 0;
+  border-bottom: 1px solid red; }
+  .methods:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .methods h1 {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    font-weight: 900;
+    width: 860px;
+    font-size: 2.25em;
+    line-height: 1.25em; }
+  .methods h2 {
+    font-size: 2.75em;
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 0; }
+  .methods h3 {
+    text-align: center; }

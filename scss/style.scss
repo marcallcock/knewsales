@@ -6,6 +6,9 @@
 
 //images
 
+//mixins
+@import "mixins";
+
 //elements
 @import "type";
 @import "buttons";
@@ -14,4 +17,10 @@
 //sections
 @import "header";
 @import "nav";
+@import "sections";
+@import "hero";
+@import "why";
+@import "services";
+@import "direct-sales";
+@import "methods";
 @import "footer";

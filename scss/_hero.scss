@@ -1,0 +1,19 @@
+.hero {
+	width:100%;
+	@include clearfix;
+	padding:200px 0;
+	border-bottom: 1px solid red;
+	h1 {
+		text-align: center;
+		margin:0 auto;
+		display: block;
+		clear: both;
+		font-weight: 900;
+		width: 860px;
+		font-size: 2.25em;
+		line-height: 1.25em;
+	}
+	h2 {
+		font-size: 1.25em;
+	}
+}
