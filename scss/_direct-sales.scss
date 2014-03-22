@@ -2,5 +2,11 @@
 	width:100%;
 	@include clearfix;
 	@include section-padding;
-	border-bottom: 1px solid red;
+	background: url('../images/direct-sales/background.jpg') no-repeat;
+	background-position: center center;
+	background-size: cover;
+	h2, h3, p {
+		color: #fff;
+	}
+	
 }

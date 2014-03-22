@@ -2,5 +2,32 @@
 	width:100%;
 	@include clearfix;
 	@include section-padding;
-	border-bottom: 1px solid red;
+	background: url('../images/why/background.jpg') no-repeat;
+	background-position: center center;
+	background-size: cover; 
+	h2 {
+		margin-bottom: 50px;
+	}
+	li {
+		color: #393b3d;
+		list-style: none;
+		margin-bottom: 10px;
+		position: relative;
+		&:before {
+			content: '✔‎';
+			display: block;
+			width: 15px;
+			height: 15px;
+			position: absolute;
+			left: -25px;
+			color: $brand-color;
+		}
+		span {
+			color: $brand-color;
+			font-weight: 700;
+		}
+	}
+	p {
+		color: #393b3d;
+	}
 }

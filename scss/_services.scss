@@ -2,5 +2,28 @@
 	width:100%;
 	@include clearfix;
 	@include section-padding;
-	border-bottom: 1px solid red;
+	background: #393b3d;
+	color: #fff;
+	h3 {
+		color: #fff;
+		margin-bottom: 50px;
+	}
+	h4 {
+		color: $brand-color;
+	}
+	ul {
+		-webkit-margin-before: 0;
+		-webkit-padding-start: 0;
+		li {
+			list-style-position: inside;
+		}
+	}
+	.icons {
+		width: 120px;
+		height: 120px;
+		display: block;
+		margin-top: 30px;
+	}
+
+
 }

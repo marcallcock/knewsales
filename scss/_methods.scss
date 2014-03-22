@@ -2,13 +2,55 @@
 	width:100%;
 	@include clearfix;
 	@include section-padding;
-	border-bottom: 1px solid red;
+	background: url('../images/methods/background.jpg') no-repeat;
+	background-position: top center;
+	background-size: 100% 440px;
+	h3 {
+		margin-bottom: 100px; 
+	}
 	h4 {
 		text-align: center;
 	}
+	.method-card {
+		margin-bottom: 70px;
+		@include clearfix;
+		li {
+			border-radius: 3px;
+			padding: 5px 20px;
+			border: 1px solid #ccc;
+			background: #fff;
+			width: 30%;
+			float: left;
+			margin-right: 5%;
+			list-style: none;
+			text-align: center;
+			&:last-of-type {
+				margin-right: 0;
+			}
+			.icons {
+				width: 120px;
+				height: 120px;
+				display: block;
+				margin:-65px auto 0;
+				
+			}
+		}
+	}
 	.clients {
+		clear: both;
+		width: 100%;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		padding: 30px 30px 50px 30px;
+		h4 {
+			background: #fff;
+			padding: 20px;
+			margin: -63px auto 20px;
+			display: table; 
+		}
 		p {
 			text-align: center;
+			margin-bottom: 50px;
 		}
 	}
 }
