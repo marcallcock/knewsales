@@ -1,0 +1,51 @@
+.contact {
+	width:100%;
+	@include clearfix;
+	@include section-padding;
+	background: url('../images/contact/background.jpg') no-repeat;
+	background-position: center center;
+	background-size: cover; 
+	background: #fff;
+	h2, h3, p {
+		color: #000;
+	}
+	h2 {
+		@include extra-margin;
+	}
+	h4 {
+		text-align: center;
+	}
+	.location {
+		width: 47.5%;
+		@media screen and(max-width: 40em){
+  			width: 100%;
+  			margin-bottom: 30px;
+  		}
+	}
+	.us {
+		float: left;
+	}
+	.canadian {
+		float: right;
+	}
+	.contact-details {
+		div {
+			width: 50%;
+			float: left;
+			padding-left: 12.5%;
+			@media screen and(max-width: 30em){
+  				width: 100%;
+  				margin-bottom: 15px;
+  			}
+			h4 {
+				text-align: left;
+				color: $brand-color;
+				
+			}
+			span, address {
+				font-weight: 700;
+				font-style: normal;
+			}
+		}
+	}
+}

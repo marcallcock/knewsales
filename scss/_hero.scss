@@ -4,6 +4,9 @@
 	padding:180px 0 300px;
 	background: url('../images/hero/hero.jpg') no-repeat;
 	background-position: -280px bottom;
+	@media screen and(max-width: 42em){
+		padding:80px 2.5% 80px;
+	}
 	h1 {
 		text-align: center;
 		margin:0 auto 25px;
@@ -14,8 +17,15 @@
 		font-size: 2.6em;
 		line-height: 1.25em;
 		color: #fff;
+		@media screen and(max-width: 60em){
+			width: 90%;
+		}
 		span {
 			display: block;
+			@media screen and(max-width: 60em){
+				display: inline;
+
+			}
 		}
 	}
 	h2 {

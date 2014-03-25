@@ -1,0 +1,29 @@
+.careers {
+	width:100%;
+	@include clearfix;
+	background: #393b3d;
+	.third {
+		width: 33%;
+		float: left;
+		@media screen and(max-width: 50em){
+			width: 100%;
+		}
+	}
+	.two-thirds {
+		width: 67%;
+		float: right;
+		padding-left: 5%;
+		padding:50px 5% 50px 5%;
+		@media screen and(max-width: 50em){
+			width: 100%;
+		}
+
+		h2 {
+			text-align: left;
+		}
+		p {
+			max-width: 600px;
+			color: #fff;
+		}
+	}
+}

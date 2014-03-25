@@ -1,5 +1,17 @@
 $brand-color: #cf4d3c;
 
+@mixin transition {
+  -webkit-transition: all .2ms ease-in;
+  -moz-transition: all .2ms ease-in;
+  -ms-transition: all .2ms ease-in;
+  -o-transition: all .2ms ease-in;
+  transition: all .2ms ease-in;
+}
+
+@mixin extra-margin {
+  margin-bottom: 50px;
+}
+
 @mixin clearfix {
   &:after {
     content: "";
@@ -9,7 +21,10 @@ $brand-color: #cf4d3c;
 }
 
 @mixin section-padding {
-  padding:100px 0;
+  padding:100px 3%;
+  @media screen and(max-width: 40em){
+    padding:50px 10%;
+  }
 }
 
 @mixin section-h2 {

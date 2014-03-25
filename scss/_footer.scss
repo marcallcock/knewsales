@@ -1,0 +1,13 @@
+footer {
+	width: 100%;
+	background: $brand-color;
+	display: table;
+	.copyright {
+		font-size: 1.2em;
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+		color: #fff;
+		padding:50px;
+	}
+}
