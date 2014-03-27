@@ -80,7 +80,8 @@ template {
  * Remove the gray background color from active links in IE 10.
  */
 a {
-  background: transparent; }
+  background: transparent;
+  text-decoration: none; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
@@ -2784,7 +2785,7 @@ section h2 {
   font-weight: 900;
   line-height: 1.1;
   margin: 0;
-  color: #cf4d3c;
+  color: #ed1c24;
   text-align: center;
   text-transform: uppercase; }
 section h3 {
@@ -2798,7 +2799,7 @@ section h4 {
 
 header {
   position: fixed;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.15);
   width: 100%;
   height: 80px;
   z-index: 9999; }
@@ -2806,102 +2807,17 @@ header {
     content: "";
     display: table;
     clear: both; }
+  @media only screen and (max-width: 68em) {
+    header {
+      background: rgba(0, 0, 0, 0.5); } }
   header .logo {
-    width: 190px;
+    width: 250px;
     height: 60px;
     position: relative;
     top: 8px;
     left: 20px;
     float: left; }
 
-.nav {
-  position: relative;
-  margin: 27px 0; }
-
-.nav ul {
-  margin: 0;
-  padding: 0;
-  float: right; }
-
-.nav li {
-  margin: 0 5px 10px 0;
-  padding: 0;
-  list-style: none;
-  display: inline-block; }
-
-.nav a {
-  padding: 3px 12px 4px;
-  text-decoration: none;
-  color: #000;
-  line-height: 100%;
-  font-weight: 700; }
-
-.nav a:hover {
-  color: #000; }
-
-.nav .current a {
-  background: rgba(0, 0, 0, 0.1);
-  color: #fff;
-  border-radius: 5px; }
-
-/* right nav */
-.nav.right ul {
-  text-align: right; }
-
-@media screen and (max-width: 600px) {
-  .nav {
-    position: relative;
-    min-height: 40px; }
-
-  .nav ul {
-    width: 180px;
-    padding: 5px 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: solid 1px #aaa;
-    background: white url(images/icon-menu.png) no-repeat 10px 11px;
-    border-radius: 5px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
-
-  .nav li {
-    display: none;
-    /* hide all <li> items */
-    margin: 0; }
-
-  .nav .current {
-    display: block;
-    /* show only current <li> item */ }
-
-  .nav a {
-    display: block;
-    padding: 5px 5px 5px 32px;
-    text-align: left; }
-
-  .nav .current a {
-    background: none;
-    color: #666; }
-
-  /* on nav hover */
-  .nav ul:hover {
-    background-image: none; }
-
-  .nav ul:hover li {
-    display: block;
-    margin: 0 0 5px; }
-
-  .nav ul:hover .current {
-    background: url(images/icon-check.png) no-repeat 10px 7px; }
-
-  /* right nav */
-  .nav.right ul {
-    left: auto;
-    right: 0; }
-
-  /* center nav */
-  .nav.center ul {
-    left: 50%;
-    margin-left: -90px; } }
 .hero {
   width: 100%; }
   .hero:after {
@@ -2918,6 +2834,13 @@ header {
     content: "";
     display: table;
     clear: both; }
+  @media screen and (max-width: 66em) {
+    .hero {
+      padding: 110px 0 100px;
+      background-position: center bottom; } }
+  @media screen and (max-width: 40em) {
+    .hero {
+      padding: 100px 2.5% 80px; } }
   .hero h1 {
     text-align: center;
     margin: 0 auto 25px;
@@ -2926,11 +2849,15 @@ header {
     font-weight: 900;
     width: 1100px;
     font-size: 2.6em;
-    line-height: 1.25em;
+    line-height: 1.5em;
     color: #fff; }
-    @media screen and (max-width: 60em) {
+    @media screen and (max-width: 66em) {
       .hero h1 {
-        width: 90%; } }
+        width: 90%;
+        font-size: 2em; } }
+    @media screen and (max-width: 40em) {
+      .hero h1 {
+        font-size: 1.6em; } }
     .hero h1 span {
       display: block; }
       @media screen and (max-width: 60em) {
@@ -2941,6 +2868,15 @@ header {
     color: #fff;
     font-weight: 400;
     text-transform: lowercase; }
+    @media screen and (max-width: 60em) {
+      .hero h2 {
+        font-size: 1.2em;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto; } }
+    @media screen and (max-width: 40em) {
+      .hero h2 {
+        font-size: 1em; } }
   .hero .overlay {
     position: relative;
     top: 0;
@@ -2976,9 +2912,9 @@ header {
       height: 15px;
       position: absolute;
       left: -25px;
-      color: #cf4d3c; }
+      color: #ed1c24; }
     .why li span {
-      color: #cf4d3c;
+      color: #ed1c24;
       font-weight: 700; }
   .why p {
     color: #393b3d; }
@@ -2998,7 +2934,7 @@ header {
   .services h3 {
     color: #fff; }
   .services h4 {
-    color: #cf4d3c; }
+    color: #ed1c24; }
   .services ul {
     -webkit-margin-before: 0;
     -webkit-padding-start: 0; }
@@ -3063,7 +2999,9 @@ header {
         .methods .method-card li {
           width: 100%;
           clear: both;
-          margin-bottom: 80px; } }
+          margin-bottom: 80px; }
+          .methods .method-card li:last-of-type {
+            margin-bottom: 0; } }
       .methods .method-card li:last-of-type {
         margin-right: 0; }
       .methods .method-card li .icons {
@@ -3092,7 +3030,7 @@ header {
 .team {
   width: 100%;
   padding: 100px 3%;
-  background: #cf4d3c; }
+  background: #ed1c24; }
   .team:after {
     content: "";
     display: table;
@@ -3130,7 +3068,7 @@ header {
         border-radius: 30px; }
         .team ul li button:hover {
           background: #fff;
-          color: #cf4d3c; }
+          color: #ed1c24; }
       .team ul li a {
         text-decoration: none;
         color: #fff; }
@@ -3175,7 +3113,7 @@ header {
         margin-bottom: 15px; } }
     .contact .contact-details div h4 {
       text-align: left;
-      color: #cf4d3c; }
+      color: #ed1c24; }
     .contact .contact-details div span, .contact .contact-details div address {
       font-weight: 700;
       font-style: normal; }
@@ -3209,7 +3147,7 @@ header {
 
 footer {
   width: 100%;
-  background: #cf4d3c;
+  background: #ed1c24;
   display: table; }
   footer .copyright {
     font-size: 1.2em;

@@ -1,0 +1,119 @@
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+
+nav {
+  float: right;
+  
+  background: ;
+  overflow: visible;
+  margin-top: 18px;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  color: #ed1c24;
+}
+
+nav:before, nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  width: auto;
+  height: auto !important;
+  list-style: none;
+}
+@media only screen and (max-width: 68em) {
+    nav {
+      float: left;
+      background: #ed1c24;
+      background: rgba(237,28,36,.95);
+      overflow: visible;
+      margin-top: 20px;
+      width: 100%;
+    }
+  nav ul {
+    display: none;
+    float: left;
+    clear: both;
+    width: 100%;
+  }
+}
+nav ul li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+}
+@media only screen and (max-width: 68em) {
+  nav {
+    width: 100%;
+  }
+  nav ul li {
+    display: block;
+    width: 100%;
+    text-align: right;
+    border-bottom: 1px solid #b24234;
+  }
+   
+}
+@media only screen and (max-width: 68em) {
+  nav ul li:hover {
+    background: #d01b22;
+  }
+  nav ul li a:hover{
+    color: #fff;
+   }
+}
+nav ul li > a {
+  padding: 0 20px;
+  line-height: 3.125em;
+  color: #fff;
+  font-size: 0.875em;
+  font-weight: 600;
+  width: 100%;
+  text-align: right;
+}
+
+
+nav ul li > a span {
+  margin-right: 4px;
+  color: #307e5c;
+}
+nav ul li > a:hover span {
+  color: #f09f47;
+}
+
+
+
+
+
+#toggle-menu {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  display: none;
+  cursor: pointer;
+  font-size: 2.5em;
+  color: #fff;
+}
+@media only screen and (max-width: 68em) {
+  #toggle-menu {
+    display: block;
+  }
+}
+
+
