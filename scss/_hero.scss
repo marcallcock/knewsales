@@ -2,7 +2,7 @@
 	width:100%;
 	@include clearfix;
 	padding:180px 0 300px;
-	background: url('../images/hero/hero.jpg') no-repeat;
+	background: url('../images/hero/hero-2.jpg') no-repeat;
 	background-position: -280px bottom;
 	@media screen and(max-width: 66em){
 		padding:110px 0 100px;
@@ -40,7 +40,7 @@
 		font-size: 1.4em;
 		color: #fff;
 		font-weight: 400;
-		text-transform: lowercase;
+		text-transform: inherit;
 		@media screen and(max-width: 60em){
 			font-size: 1.2em;
 			width: 80%;

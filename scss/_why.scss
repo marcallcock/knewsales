@@ -14,13 +14,14 @@
 		margin-bottom: 10px;
 		position: relative;
 		&:before {
-			content: '✔‎';
 			display: block;
-			width: 15px;
-			height: 15px;
+			background-image: url('../images/why/knewsales-logo-man.png') ;
+			background-size: 100%;
+			width: 20px;
+			height: 25px;
+			content: '';
 			position: absolute;
 			left: -25px;
-			color: $brand-color;
 		}
 		span {
 			color: $brand-color;
