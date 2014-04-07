@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Knewsales</title>
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/arrow.css">
 
 <link rel="stylesheet" href="css/nav.css">
 
@@ -14,6 +15,7 @@
       <script src="js/prefixfree.min.js"></script>
   <script src="js/modernizr.js"></script>
 <link rel="stylesheet" href="css/colorbox.css" />
+<link rel="stylesheet" href="css/middle.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="js/jquery.colorbox-min.js"></script>
 
@@ -51,13 +53,22 @@
 		</ul>
 	</nav>-->
 </header>
-<section class="hero">
+<div class="first-section table">
+	<div class="table-cell">
+  		<h1 class="cover">"Earning the right to deliver for our clients tomorrow
+<span>by exceeding their expectations today"</h1>
+	</div>
+	 <div class="arrow animated bounce">
+
+</div>
+</div>
+<!--<section class="hero">
 	<h1>"Earning the right to deliver for our clients tomorrow
 <span>by exceeding their expectations today"</span></h1>
 	<h2>North America’s one-stop-shop customer acquisition, creative and data analytics solutions company</h2>
 	<div class="overlay"></div>
 </div>
-</section>
+</section>-->
 <main>
 	
 	<section class="why">
@@ -132,6 +143,32 @@ We schedule our sales agents to match their language capabilities with the locat
 			</div>
 		</div>
 	</section>
+	<section class="sponsorship">
+		<div class="row">
+			<h2>Sponsorship</h2>
+			<h3>Our skilled team prospect and generate revenue through sponsorship for its represented clients, evaluating the current sponsorship strategy and providing valuation of assets and aligning new strategies to meet client objectives.  </h3>
+			<div class="small-12 medium-6 columns">
+				<p>Our strong network of senior associates inside many industry sectors have allowed us to bring together the right sponsorship opportunity to the right client partner.  Each of these sponsorship opportunities have helped drive value for many of the following types of events and associations. These include: </p>
+				<ul>
+					<li>Location-based Direct Sales Campaigns </li>
+					<li>Regional & National Trade-Shows</li>
+					<li>Local and National Festivals, Concerts & Events</li>
+					<li>Professional & Amateur Sports</li>
+					<li>Theme-Parks and all other Tourist Attractions</li>
+				</ul>
+			</div>
+			<div class="small-12 medium-6 columns">
+				<h4>We have a proven ability to:</h4>
+				<ul>
+					<li>Prospect, pitch, and deliver to achieve sponsor marketplace goals.</li>
+					<li>Develop effective and successful ways to sell into highly competitive markets.</li>
+					<li>Lead and manage, continuously improving the sales process.</li>
+					<li>Build upon the success of the organization’s existing customers, while accruing new accounts.</li>
+					<li>Focus on building long-term valued relationships within the market to grow revenue and profitability.</li>
+				</ul>
+			</div>
+		</div>
+	</section>
 	<section class="methods">
 		<div class="row">
 			<h2>Methods</h2>
@@ -178,7 +215,7 @@ We only hire the best, most dedicated Brand Ambassadors to represent our clients
 					<li><a href="#inline_content_angela" class="button inline"><span class="member"><img src="images/team/angela.png"></span><button>ANGELA MANDERSON</button></a></li>
 					<li><a href="#inline_content_aspa" class="button inline"><span class="member"><img src="images/team/aspa.png"></span><button>ASPA PALAMIOTIS</button></a></li>
 					<li><a href="#inline_content_steve" class="button inline"><span class="member"><img src="images/team/steve.png"></span><button>STEVE ALLEN</button></a></li>
-					<li><a href="#inline_content_chris" class="button inline"><span class="member"><img src="images/team/chris.png"></span><button>CHRIS ALLEN</button></a></li>
+					<li><a href="#inline_content_chris" class="button inline"><span class="member"><img src="images/team/chris.png"></span><button>CHRIS NAZARI</button></a></li>
 				</ul>
 		</div>
 		<!-- This contains the hidden content for inline calls -->
@@ -279,7 +316,7 @@ We only hire the best, most dedicated Brand Ambassadors to represent our clients
 		</div>
 		<div class='bio'>
 			<div id='inline_content_chris' style='padding:20px;'>
-				<h4>Chris Nazari</h4>
+				<h4>Chris NAZARI</h4>
 				<span></span>
 				<a href="">Chris@knewsales.com</a>
 				<p>Steve graduated from Fanshawe College in 2010.   He has been working in the marketing industry for 3.5 years and is quickly becoming known as a marketing forward thinker. Steve’s passion for sales and marketing helps drive Knewsales Group to new heights.  Steve is an active member in his community and involved in a number of charities.  Steve has participated in the Heart and Stroke Foundation’s Ride for Heart for 3 consecutive years and is one of the driver’s of Knewsales Group unique and fun culture.
@@ -352,29 +389,30 @@ We only hire the best, most dedicated Brand Ambassadors to represent our clients
 	</span>
 </footer>
 <script>
-			$(document).ready(function(){
-				//Examples of how to assign the Colorbox event to elements
-				$(".inline").colorbox({inline:true, width:"50%"});
-				$(".callbacks").colorbox({
-					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
-					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
-					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
-					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
-					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
-				});
+	$(document).ready(function(){
+		//Examples of how to assign the Colorbox event to elements
+		$(".inline").colorbox({inline:true, width:"50%"});
+		$(".callbacks").colorbox({
+			onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+			onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+			onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+			onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+			onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+		});
 
-				$('.non-retina').colorbox({rel:'group5', transition:'none'})
-				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
-				
-				//Example of preserving a JavaScript event for inline calls.
-				$("#click").click(function(){ 
-					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
-					return false;
-				});
-			});
-		</script>
+		$('.non-retina').colorbox({rel:'group5', transition:'none'})
+		$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+		
+		//Example of preserving a JavaScript event for inline calls.
+		$("#click").click(function(){ 
+			$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+			return false;
+		});
+	});
+</script>
 		
   <script src="js/index.js"></script>
+  <script src="js/middle.js"></script>
 </body>
 </html>
 

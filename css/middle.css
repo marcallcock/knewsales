@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic,900,900italic);
+html, body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 100;
+  color: #555;
+  background-color: white;
+  width: 100%;
+  position: relative;
+}
+
+.table {
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 100%;
+  left: 0px;
+  z-index: 0;
+  display: table;
+}
+
+.table-cell {
+  position: relative;
+  vertical-align: middle;
+  display: table-cell;
+  float: none;
+  min-height: 100%;
+  width: 100%;
+}
+
+.first-section {
+  background: url("../images/hero/hero-3.jpg") no-repeat center center;
+  color: white;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+.first-section:after {
+  content: "";
+  display: block;
+  position: absolute;
+  /* absolute/relative */
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(57, 59, 61, 0.1);
+}
+.first-section h1.cover {
+  color: white;
+  z-index: 3;
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  font-size: 3em;
+
+}
+
+.second-section {
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+.second-section p {
+  font-size: 1.25rem;
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+@media only screen and (min-width: 500px) {
+  .second-section p {
+    font-size: 1.75rem;
+    font-weight: 200;
+    font-style: italic;
+    letter-spacing: 1px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .second-section {
+    padding: 4rem 2rem 4rem 2rem;
+  }
+}
+
+

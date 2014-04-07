@@ -6,11 +6,25 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	color:black;
-	}
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 1.35em;
+	margin-top: 0em;
+}
 
 p, li {
 	word-spacing: 1px;
 	font-weight: 400;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+
 }
 
 section {

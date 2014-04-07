@@ -1,17 +1,17 @@
-.services {
+.sponsorship {
 	width:100%;
 	@include clearfix;
 	@include section-padding;
-	background: #ed1c24;
+	background: #393b3d;
 	color: #fff;
 	h2 {
-		color: #222;
+		color: $brand-color;
 	}
 	h3 {
 		color: #fff;
 	}
 	h4 {
-		color: #222;
+		color: $brand-color;
 	}
 	ul {
 		-webkit-margin-before: 0;
