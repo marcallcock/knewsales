@@ -1,16 +1,17 @@
 .careers {
 	width:100%;
 	@include clearfix;
+	@include section-padding;
 	background: #393b3d;
 	.third {
-		width: 34%;
+		width: 45%;
 		float: left;
 		@media screen and(max-width: 50em){
 			width: 100%;
 		}
 	}
 	.two-thirds {
-		width: 66%;
+		width: 55%;
 		float: right;
 		padding-left: 5%;
 		padding:50px 5% 50px 5%;

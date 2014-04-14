@@ -48,3 +48,16 @@ $brand-color: #ed1c24;
   font-size: 1.1em;
   font-weight: 700;
 }
+
+@-moz-document url-prefix() { 
+  .cover {
+     padding: 200px 0;
+  }
+  ul {
+    padding-left: 0;
+  }
+}
+
+
+
+

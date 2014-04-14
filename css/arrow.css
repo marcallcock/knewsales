@@ -102,8 +102,10 @@ body {
 }
 
 .bounce {
-  -webkit-animation: bounce 2s infinite;
-  -moz-animation: bounce 2s infinite;
-  -ms-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s;
+  -moz-animation: bounce 2s;
+  -ms-animation: bounce 2s;
+  animation: bounce 2s;
+  animation-delay:1.5s;
+  -webkit-animation-delay:1.5s
 }

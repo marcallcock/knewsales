@@ -2767,6 +2767,13 @@ select {
   .large-block-grid-12 > li:nth-child(12n) {
     padding-left: 1.71875em;
     padding-right: 0em; } }
+@-moz-document url-prefix() {
+  .cover {
+    padding: 200px 0; }
+
+  ul {
+    padding-left: 0; } }
+
 body {
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
@@ -2982,7 +2989,7 @@ header {
 .sponsorship {
   width: 100%;
   padding: 100px 3%;
-  background: #393b3d;
+  background: url("../images/sponsorship/background.jpg") repeat;
   color: #fff; }
   .sponsorship:after {
     content: "";
@@ -3036,8 +3043,8 @@ header {
     .methods .method-card li {
       border-radius: 3px;
       padding: 5px 20px;
-      border: 1px solid #ccc;
-      background: #fff;
+      background: #393b3d;
+      color: #fff;
       width: 30%;
       float: left;
       margin-right: 5%;
@@ -3094,6 +3101,15 @@ header {
     display: none; }
     .team .bio h4 {
       font-size: 2em; }
+    .team .bio p {
+      clear: both;
+      margin-top: 20px;
+      float: left;
+      display: block; }
+    .team .bio .profile {
+      width: 100px;
+      height: auto;
+      float: left; }
   .team ul {
     text-align: center; }
     .team ul li {
@@ -3169,19 +3185,23 @@ header {
 
 .careers {
   width: 100%;
+  padding: 100px 3%;
   background: #393b3d; }
   .careers:after {
     content: "";
     display: table;
     clear: both; }
+  @media screen and (max-width: 40em) {
+    .careers {
+      padding: 50px 10%; } }
   .careers .third {
-    width: 34%;
+    width: 45%;
     float: left; }
     @media screen and (max-width: 50em) {
       .careers .third {
         width: 100%; } }
   .careers .two-thirds {
-    width: 66%;
+    width: 55%;
     float: right;
     padding-left: 5%;
     padding: 50px 5% 50px 5%; }

@@ -2,7 +2,7 @@
 	width:100%;
 	@include clearfix;
 	@include section-padding;
-	background: #ed1c24;
+	background: $brand-color;
 	color: #fff;
 	h2 {
 		color: #222;

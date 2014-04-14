@@ -2,7 +2,7 @@
 	width:100%;
 	@include clearfix;
 	@include section-padding;
-	background: #393b3d;
+	background: url('../images/sponsorship/background.jpg')repeat;
 	color: #fff;
 	h2 {
 		color: $brand-color;

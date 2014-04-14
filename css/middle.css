@@ -80,6 +80,26 @@ body {
   font-style: italic;
   letter-spacing: 1px;
 }
+
+
+@media only screen and (max-width: 56em) {
+  .first-section h1.cover {
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .first-section h1.cover {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 38em) {
+  .first-section h1.cover {
+    font-size: 1.4em;
+  }
+}
+
 @media only screen and (min-width: 500px) {
   .second-section p {
     font-size: 1.75rem;
